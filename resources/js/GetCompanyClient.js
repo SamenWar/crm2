@@ -1,10 +1,11 @@
 
 $("#clientsCompany").click(function(){
+    var id = document.getElementById("number").value
     $('tbody').find('td').remove();
     $('#npage').remove()
     $('#bpage').remove()
     $.ajax({
-        url: "api/clientsCompanies", success: function (response) {
+        url: "api/clientsCompanies?id="+id, success: function (response) {
             console.log(response);
 
             let data = response.data
@@ -81,7 +82,7 @@ $("#bpage").click(function(){
     $('#npage').remove()
     $('#bpage').remove()
     $.ajax({
-        url: blink , success: function (response) {
+        url: blink+"?id="+id , success: function (response) {
             console.log(response);
 
             let data = response.data

@@ -15,7 +15,7 @@
 <button id="clients">Clients</button>
 <button id="company">Companies</button>
 <button id="clientsCompany">Clients Company</button>
-<input type="number" id="id">
+<input type="number" id="number">
 <div class="container">
     <table id="example" class="display" style="width:100%">
         <thead>
